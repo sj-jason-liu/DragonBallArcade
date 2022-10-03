@@ -21,7 +21,7 @@ public class BallSpawner : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            Instantiate(_ball, new Vector3(Random.Range(-1.4f, 1.4f), _ballGenerateHeight, 0), Quaternion.identity);
+            Instantiate(_ball, new Vector3(Random.Range(-1.4f, 1.4f), transform.position.y, 0), Quaternion.identity);
         }
     }
 }
